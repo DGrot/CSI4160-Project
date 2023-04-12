@@ -8,11 +8,13 @@
   <title>Document</title>
 </head>
 <?php
+// PHP code to connect to MySQL database
 $host = "34.132.166.21";
 $username = "root";
 $password = "password";
 $dbname = "csi4160-grot-db";
-
+    
+// Check if connection to database is successful
 $conn = new mysqli($host, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("connection failed: " . $conn->connect_error);
